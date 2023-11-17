@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_user_demo" model="res.users">
+        <field name="partner_id" ref="school_lesson_6_1.res_partner_demo"/>
+        <field name="login">SomeName</field>
+        <field name="password">user12userL</field>
+        <field name="active" eval="True"/>
+    </record>
+
+</odoo>

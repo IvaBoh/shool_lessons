@@ -3,31 +3,35 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0.html).
 
 {
-    'name': 'School Lesson 6 1',
-    'version': '15.0.0.0.1',
-    'category': 'Extra Tools',
-    'summary': """
+    "name": "School Lesson 6 1",
+    "version": "15.0.0.0.1",
+    "category": "Extra Tools",
+    "summary": """
         Odoo School
         Lesson 6-1: Master and demo data.
     """,
-    'license': 'LGPL-3',
-    'author': 'Garazd Creation',
-    'website': 'https://garazd.biz',
-    'depends': [
-        'base',
+    "license": "LGPL-3",
+    "author": "Garazd Creation",
+    "website": "https://garazd.biz",
+    "depends": [
+        "base",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'data/res_partner_data.xml',
-        'views/library_book_menus.xml',
-        'views/library_book_views.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "data/res_partner_data.xml",
+        "data/library_book_category_data.xml",
+        "views/library_book_menus.xml",
+        "views/library_book_views.xml",
     ],
-    'demo': [
-        'data/res_partner_demo.xml',
-        'data/res_partner_bank_demo.xml',
+    "demo": [
+        "data/res_partner_demo.xml",
+        "data/res_partner_bank_demo.xml",
+        "data/res_user_demo.xml",
+        "data/library_book_demo.xml",
+        "data/update_delete_demo.xml",
     ],
-    'support': 'support@garazd.biz',
-    'application': False,
-    'installable': True,
-    'auto_install': False,
+    "support": "support@garazd.biz",
+    "application": False,
+    "installable": True,
+    "auto_install": False,
 }

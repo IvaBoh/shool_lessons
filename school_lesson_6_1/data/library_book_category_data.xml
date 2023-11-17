@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="category_1" model="library.book.category" forcecreate="True">
+        <field name="name">Novel</field>
+        <field name="description">A novel is an extended work of narrative fiction usually written in prose and published as a book.</field>
+    </record>
+
+    <record id="category_2" model="library.book.category" forcecreate="True">
+        <field name="name">Adventure fiction</field>
+        <field name="description">Adventure fiction is a type of fiction that usually presents danger, or gives the reader a sense of excitement. Some adventure fiction also satisfies the literary definition of romance fiction.</field>
+    </record>
+
+    <record id="category_3" model="library.book.category" forcecreate="True">
+        <field name="name">Science fiction</field>
+        <field name="description">Science fiction (sometimes shortened to SF or sci-fi) is a genre of speculative fiction, which typically deals with imaginative and futuristic concepts such as advanced science and technology, space exploration, time travel, parallel universes, and extraterrestrial life.</field>
+    </record>
+
+</odoo>
