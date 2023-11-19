@@ -13,6 +13,9 @@
                     </page>
                 </notebook>
             </xpath>
+            <xpath expr="//group" position="before">
+                <field name="category_id" string="Categories"/>
+            </xpath>
         </field>
     </record>
 
