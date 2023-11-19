@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="book_1" model="library.book" forcecreate="True">
+        <field name="name">Marusia Churai</field>
+        <field name="category_id" ref="category_1"/>
+    </record>
+
+    <record id="book_2" model="library.book" forcecreate="True">
+        <field name="name">The Call of the Wild</field>
+        <field name="category_id" ref="category_2"/>
+    </record>
+
+    <record id="book_3" model="library.book" forcecreate="True">
+        <field name="name">Twenty Thousand Leagues Under the Seas</field>
+        <field name="category_id" ref="category_3"/>
+    </record>
+
+</odoo>

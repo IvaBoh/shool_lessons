@@ -2,25 +2,30 @@ from odoo import api, fields, models
 
 
 class LibraryBook(models.Model):
-    _name = 'library.book'
-    _description = 'Library Books'
+    _name = "library.book"
+    _description = "Library Books"
 
-    name = fields.Char('Title')
+    name = fields.Char("Title")
     reader_id = fields.Many2one(
-        comodel_name='res.partner',
-        string='Reader',
+        comodel_name="res.partner",
+        string="Reader",
     )
-    taken_date = fields.Date('In use from', readonly=True)
+    taken_date = fields.Date("In use from", readonly=True)
     user_id = fields.Many2one(
-        comodel_name='res.users',
-        string='Responsible',
+        comodel_name="res.users",
+        string="Responsible",
+        default=lambda self: self.env.ref("school_lesson_6_1.res_user_demo"),
     )
     active = fields.Boolean(
-        string='Active',
+        string="Active",
         default=True,
     )
+    category_id = fields.Many2one(
+        comodel_name="library.book.category",
+        required=False,
+    )
 
-    @api.onchange('reader_id')
+    @api.onchange("reader_id")
     def _onchange_reader_id(self):
         if self.reader_id and not self.taken_date:
             self.taken_date = fields.Date.today()
@@ -28,5 +33,5 @@ class LibraryBook(models.Model):
     def action_assign_default(self):
         self.ensure_one()
         self.reader_id = self.env.ref(
-            'school_lesson_6_1.res_partner_customer').id
-
+            "school_lesson_6_1.res_partner_customer"
+        ).id

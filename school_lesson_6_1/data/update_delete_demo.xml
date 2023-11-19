@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="school_lesson_6_1.book_2" model="library.book">
+        <field name="name">The WIND of the Wild UPDATED</field>
+    </record>
+
+    <delete id="school_lesson_6_1.book_3" model="library.book"/>
+
+</odoo>
